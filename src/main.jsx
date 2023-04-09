@@ -7,11 +7,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Nabvar from './Components/Nabvar/Nabvar';
+import Header from './Components/Header/Header';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Nabvar></Nabvar>,
+    element: <Header></Header>,
   },
 ]);
 
