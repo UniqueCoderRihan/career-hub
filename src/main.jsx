@@ -8,11 +8,30 @@ import {
 } from "react-router-dom";
 import Nabvar from './Components/Nabvar/Nabvar';
 import Header from './Components/Header/Header';
+import Statistic from './Components/Statistic/Statistic';
+import Applied from './Components/Applied/Applied';
+import Blogs from './Components/Blogs/Blogs';
+import Home from './Components/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header></Header>,
+    element:<Home></Home>,
+    children:[
+      {
+        path: '/',
+        element: <Statistic></Statistic>
+      },
+      {
+        path: '/applied',
+        element: <Applied></Applied>
+      },
+
+      {
+        path: '/blogs',
+        element:<Blogs></Blogs>
+      }
+    ]
   },
 ]);
 

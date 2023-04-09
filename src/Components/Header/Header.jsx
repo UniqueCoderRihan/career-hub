@@ -6,7 +6,6 @@ const Header = () => {
     return (
 
         <div className='mx-5'>
-            <Nabvar></Nabvar>
             <div className='grid md:grid-cols-2'>
                 <div className='w-50% my-auto'>
                     <div>
