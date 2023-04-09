@@ -23,8 +23,8 @@ const jobsPost = [
       jobDescription: "We are seeking an experienced product manager to lead our product team",
       experience: "5+ years",
       educationQualification: "Bachelor's Degree in Business or related field",
-      companyName: "NETFLIX",
-      companyLogo: "https://i.ibb.co/L8N8K0s/netflix-4-1.png",
+      companyName: "Google",
+      companyLogo: "https://i.ibb.co/L8N8K0s/Google-4-1.png",
       postName: "Product Manager"
     },
     {
@@ -51,8 +51,8 @@ const jobsPost = [
         jobDescription: "We are seeking an experienced product manager to lead our product team",
         experience: "5+ years",
         educationQualification: "Bachelor's Degree in Business or related field",
-        companyName: "NETFLIX",
-        companyLogo: "https://i.ibb.co/L8N8K0s/netflix-4-1.png",
+        companyName: "Google",
+        companyLogo: "https://i.ibb.co/L8N8K0s/Google-4-1.png",
         postName: "Web Application develoepr"
       },
       {

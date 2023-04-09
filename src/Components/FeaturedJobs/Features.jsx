@@ -13,7 +13,7 @@ const Features = () => {
                 <h3 className='text-4xl font-semibold'>Featured Jobs</h3>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            <div className='grid sm:grid-cols-1 md:grid-cols-2' >
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-4' >
                 {
                     jobs.map(job => <Singlejob
                         key={job.id}
