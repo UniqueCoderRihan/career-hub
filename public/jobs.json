@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Account & Finance",
+        "img": "https://i.ibb.co/SvhH43L/accounts-1.png",
+        "quantity": 100
+    },
+    {
+        "id": 2,
+        "name": "Social Media",
+        "img": "https://i.ibb.co/52skyPc/social-media-1.png",
+        "quantity": 142
+    },
+    {
+        "id": 3,
+        "name": "Engineering Job",
+        "img": "https://i.ibb.co/GWbcRCR/chip-1.png",
+        "quantity": 211
+    },
+    {
+        "id": 4,
+        "name": "Creative Design",
+        "img": "https://i.ibb.co/Fss8Rzq/Group-13.png",
+        "quantity": 104
+    }
+]
