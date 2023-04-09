@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 const Home = () => {
     const location = useLocation()
     return (
-        <div>
+        <div className='mx-5'>
             <Nabvar></Nabvar>
             {
                 location.pathname =='/'?<Header></Header>:``
