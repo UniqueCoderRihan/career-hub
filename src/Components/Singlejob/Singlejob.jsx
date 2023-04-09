@@ -1,6 +1,6 @@
 import React from 'react';
 import './Singlejob.css'
-const Singlejob = ({ job }) => {
+const Singlejob = ({ job,handleDetails}) => {
     // console.log(job);
     const { companyLogo, jobName, id, type, salary, location, companyName } = job;
     return (
@@ -17,7 +17,7 @@ const Singlejob = ({ job }) => {
                         <div className="badge badge-primary badge-outline ">Full Time</div>
                     </div>
                     <p> ௹{location}  <span> $ {salary}</span></p>
-                    <button className='btn w-fit'>View Details</button>
+                    <button onClick={()=>handleDetails(id)} className='btn w-fit  btnMore'>View Details</button>
                 </div>
             </div>
         </div>

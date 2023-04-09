@@ -7,6 +7,10 @@ const Features = () => {
         .then(res => res.json())
         .then(jobs => setjobs(jobs))
 
+    const handleDetails = (id)=>{
+        const selected = jobs.filter(job=>job.id===id);
+        console.log(selected);
+    }
     return (
         <div>
             <div className='text-center my-4'>
@@ -18,6 +22,7 @@ const Features = () => {
                     jobs.map(job => <Singlejob
                         key={job.id}
                         job={job}
+                        handleDetails={handleDetails}
                     ></Singlejob>)
                 }
             </div>

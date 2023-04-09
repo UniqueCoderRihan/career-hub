@@ -5,3 +5,6 @@
     border-radius: 10px;
     justify-content: start;
 }
+.btnMore{
+    background:  linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+}
