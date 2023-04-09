@@ -21,6 +21,9 @@ const Features = () => {
                     ></Singlejob>)
                 }
             </div>
+            <div className='text-center'>
+                <button className='btn btn-primary'>See All Jobs</button>
+            </div>
         </div>
     );
 };
