@@ -21,10 +21,12 @@ const Details = () => {
                 </div>
                 <div className='m-5'>
                     <p className='font-semibold mb-3'>Job Details:</p>
+                    <hr />
                     <p><span className='font-semibold'>Salary:</span> {salary}</p>
                     <p><span className='font-semibold'>Job Title:</span> {jobName}</p>
                     <div>
                         <p className='font-semibold my-4'>Contact Information</p>
+                        <hr />
                         <p> <span className='font-semibold'>Phone :</span> {contact[0]}</p>
                         <p> <span className='font-semibold'>Email :</span> {contact[1]}</p>
                         <p> <span className='font-semibold'>Location :</span> {location}</p>
