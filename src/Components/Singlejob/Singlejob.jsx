@@ -1,7 +1,7 @@
 import React from 'react';
 import './Singlejob.css'
 import { Link } from 'react-router-dom';
-const Singlejob = ({ job,handleDetails}) => {
+const Singlejob = ({ job, handleDetails }) => {
     // console.log(job);
     const { companyLogo, jobName, id, type, salary, location, companyName } = job;
     // console.log();
@@ -18,9 +18,18 @@ const Singlejob = ({ job,handleDetails}) => {
                         <div className="badge badge-primary badge-outline">{type}</div>
                         <div className="badge badge-primary badge-outline ">Full Time</div>
                     </div>
-                    <p> ௹{location}  <span> $ {salary}</span></p>
+                    <div className='flex gap-1'>
+                        <div className='flex'>
+                            <img className='mr-2' src="https://i.ibb.co/X3RjcFY/Location-Icon.png" alt="Location-Icon" border="0" />
+                            <p>{location}</p>
+                        </div>
+                        <div className='flex'>
+                            <img className='mr-2' src="https://i.ibb.co/sCGShgY/Frame.png" alt="Frame" border="0" />
+                            <p>{salary}</p>
+                        </div>
+                    </div>
                     {/* <button onClick={()=>handleDetails(id)} className='btn w-fit  btnMore'>View Details</button> */}
-                    <Link to={id}> <button>View Details</button> </Link>
+                    <Link to={id}> <button className='btn-primary btn'>View Details</button> </Link>
                 </div>
             </div>
         </div>

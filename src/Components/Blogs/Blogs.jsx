@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 
 const Blogs = () => {
     return (
@@ -37,7 +38,7 @@ const Blogs = () => {
                     <p>useMemo() is a function that returns a memoized value of a passed in resource-intensive function. It is very useful in optimizing the performance of a React component by eliminating repeating heavy computations.</p>
                 </div>
             </div>
-
+            <Footer></Footer>
         </div>
     );
 };
