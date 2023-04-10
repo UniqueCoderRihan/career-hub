@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "1",
       "jobName": "Software Engineer",
       "jobResponsibilities": [
         "Develop software applications",
@@ -17,7 +17,7 @@
       "postName": "Software Engineer"
     },
     {
-      "id": 2,
+      "id": "2",
       "jobName": "Product Manager",
       "jobResponsibilities": [
         "Develop product roadmap",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "jobName": "Data Scientist",
       "jobResponsibilities": [
         "Develop software applications",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "jobName": "Web Application develoepr ",
       "jobResponsibilities": [
         "Develop product roadmap",
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "jobName": "Programmer ",
       "jobResponsibilities": [
         "Develop software applications",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "jobName": "Data Managment ",
       "jobResponsibilities": [
         "Develop software applications",
