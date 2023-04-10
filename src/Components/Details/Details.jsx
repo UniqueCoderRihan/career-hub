@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const Details = () => {
-    const {id} = useParams();
+    const { id } = useParams();
     const alljobs = useLoaderData([]);
     // console.log(alljobs);
-    const seletedJob = alljobs.filter(job=>job.id===id);
+    const seletedJob = alljobs.filter(job => job.id === id);
     // console.log(seletedJob);
-    const {salary,type,location,jobDescription,experience,contact, educationQualification,companyName,companyLogo,postName,jobName,jobResponsibilities,} = seletedJob[0];
-    
+    const { salary, type, location, jobDescription, experience, contact, educationQualification, companyName, companyLogo, postName, jobName, jobResponsibilities, } = seletedJob[0];
+
     return (
         <div>
             <p className='text-4xl font-semibold text-center'>Job Details</p>
@@ -22,15 +22,32 @@ const Details = () => {
                 <div className='m-5'>
                     <p className='font-semibold mb-3'>Job Details:</p>
                     <hr />
-                    <p><span className='font-semibold'>Salary:</span> {salary}</p>
-                    <p><span className='font-semibold'>Job Title:</span> {jobName}</p>
+                    <div className='flex'>
+                        <img className='mr-3' src="https://i.ibb.co/sCGShgY/Frame.png" alt="Frame" border="0" />
+                        <p><span className='font-semibold'>Salary:</span> {salary}</p>
+                    </div>
+                    <div className='flex'>
+                        <img className='mr-3' src="https://i.ibb.co/R24sQWZ/Frame-1.png" alt="Frame-1" border="0"/>
+                        <p><span className='font-semibold'>Job Title:</span> {jobName}</p>
+                    </div>
                     <div>
                         <p className='font-semibold my-4'>Contact Information</p>
                         <hr />
-                        <p> <span className='font-semibold'>Phone :</span> {contact[0]}</p>
-                        <p> <span className='font-semibold'>Email :</span> {contact[1]}</p>
-                        <p> <span className='font-semibold'>Location :</span> {location}</p>
+                        <div className='flex'>
+                            <img className='mr-3' src="https://i.ibb.co/Z1xBGbT/Frame-2.png" alt="Frame-2" border="0" />
+                            <p><span className='font-semibold'> Phone :</span> {contact[0]}</p>
+                        </div>
+                        <div className='flex'>
+                            <img className='mr-3' src="https://i.ibb.co/SdR5W8h/Frame-3.png" alt="Frame-3" border="0" />
+                            <p> <span className='font-semibold'>Email :</span> {contact[1]}</p>
+                        </div>
+                        <div className='flex'>
+                            <img className='mr-3' src="https://i.ibb.co/X3RjcFY/Location-Icon.png" alt="Location-Icon" border="0" />
+                            <p> <span className='font-semibold'>Location :</span> {location}</p>
+                        </div>
+
                         <button className='btn btn-primary mt-3'>Apply Now</button>
+
                     </div>
 
                 </div>
