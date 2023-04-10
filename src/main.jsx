@@ -14,11 +14,13 @@ import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home';
 import Details from './Components/Details/Details';
 import Chat from './Components/Chat/Chat';
+import ErrorPage from './Components/Error/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path: '/',
@@ -43,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/blogs',
         element:<Blogs></Blogs>
+      },
+      {
+        path:'*',
+        element: <ErrorPage></ErrorPage>
       }
     ]
   },
