@@ -31,7 +31,11 @@
       "educationQualification": "Bachelor's Degree in Business or related field",
       "companyName": "Google",
       "companyLogo": "https://e7.pngegg.com/pngimages/523/198/png-clipart-google-logo-google-search-google-play-google-text-logo.png",
-      "postName": "Product Manager"
+      "postName": "Product Manager",
+      "contact": [
+        "+8801822194770",
+        "bdjobs@gmail.com "
+      ]
     },
     {
       "id": 3,
@@ -48,7 +52,11 @@
       "educationQualification": "Bachelor's Degree in Computer Science or related field",
       "companyName": "Google",
       "companyLogo": "https://e7.pngegg.com/pngimages/523/198/png-clipart-google-logo-google-search-google-play-google-text-logo.png",
-      "postName": "Data Scientist"
+      "postName": "Data Scientist",
+      "contact": [
+        "+8801822194770",
+        "bdjobs@gmail.com "
+      ]
     },
     {
       "id": 4,
@@ -65,7 +73,11 @@
       "educationQualification": "Bachelor's Degree in Business or related field",
       "companyName": "Google",
       "companyLogo": "https://e7.pngegg.com/pngimages/523/198/png-clipart-google-logo-google-search-google-play-google-text-logo.png",
-      "postName": "Web Application develoepr"
+      "postName": "Web Application develoepr",
+      "contact": [
+        "+8801822194770",
+        "bdjobs@gmail.com "
+      ]
     },
     {
       "id": 5,
@@ -82,7 +94,11 @@
       "educationQualification": "Bachelor's Degree in Computer Science or related field",
       "companyName": "Google",
       "companyLogo": "https://e7.pngegg.com/pngimages/523/198/png-clipart-google-logo-google-search-google-play-google-text-logo.png",
-      "postName": "Programmer"
+      "postName": "Programmer",
+      "contact": [
+        "+8801822194770",
+        "bdjobs@gmail.com "
+      ]
     },
     {
       "id": 6,
@@ -99,6 +115,10 @@
       "educationQualification": "Bachelor's Degree in Computer Science or related field",
       "companyName": "Google",
       "companyLogo": "https://e7.pngegg.com/pngimages/523/198/png-clipart-google-logo-google-search-google-play-google-text-logo.png",
-      "postName": "Data Managment"
+      "postName": "Data Managment",
+      "contact": [
+        "+8801822194770",
+        "bdjobs@gmail.com "
+      ]
     }
   ]
