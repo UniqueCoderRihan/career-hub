@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Singlejob from '../Singlejob/Singlejob';
 
 const Features = () => {
@@ -7,10 +7,9 @@ const Features = () => {
         .then(res => res.json())
         .then(jobs => setjobs(jobs))
 
-    const handleDetails = (id)=>{
-        const selected = jobs.filter(job=>job.id===id);
-        console.log(selected);
-    }
+    const Data = jobs.slice(0, 4)
+
+
     return (
         <div>
             <div className='text-center my-4'>
@@ -19,10 +18,9 @@ const Features = () => {
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-4' >
                 {
-                    jobs.map(job => <Singlejob
+                    Data.map(job => <Singlejob
                         key={job.id}
                         job={job}
-                        handleDetails={handleDetails}
                     ></Singlejob>)
                 }
             </div>

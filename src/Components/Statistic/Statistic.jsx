@@ -4,6 +4,7 @@ import { Outlet, useLoaderData } from 'react-router-dom';
 import Nabvar from '../Nabvar/Nabvar';
 import Jobs from '../Jobs/Jobs';
 import Features from '../FeaturedJobs/Features';
+import Footer from '../Footer/Footer';
 
 const Statistic = () => {
     const jobs = useLoaderData();
@@ -18,7 +19,11 @@ const Statistic = () => {
             <div>
                 <Features></Features>
             </div>
+            <div>
+                <Footer></Footer>
+            </div>
         </section>
+        
 
     );
 };

@@ -12,6 +12,7 @@ const Chat = () => {
     ];
     return (
         <div>
+            <h3 className='text-center my-4 font-semibold'>My Assignment Marks </h3>
            <AreaChart
                 width={1000}
                 height={300}

@@ -4,7 +4,7 @@ import './Nabvar.css'
 
 const Nabvar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-300 rounded-lg">
             <div className="navbar-start">
                 
                 <a className="text-2xl font-semibold">BDJOBS</a>
