@@ -11,7 +11,8 @@ const Nabvar = () => {
             </div>
             <div className="navbar-center lg:flex">
                 <ul className="menu menu-horizontal px-1 pages mr-5">
-                    <Link to='/'>Statistics</Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/statistic'>Statistics</Link>
                     <Link to='/applied'>Applied Job</Link>
                     <Link to='/blogs'>Blogs</Link>
                 </ul>

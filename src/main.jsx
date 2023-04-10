@@ -13,6 +13,7 @@ import Applied from './Components/Applied/Applied';
 import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home';
 import Details from './Components/Details/Details';
+import Chat from './Components/Chat/Chat';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
         path: '/',
         element: <Statistic></Statistic>,
         loader:()=>fetch('jobs.json')
+        
+      },
+      {
+        path: '/statistic',
+        element: <Chat></Chat>,
         
       },
       {
