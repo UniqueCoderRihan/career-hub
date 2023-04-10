@@ -1,3 +1,4 @@
+import { stringify } from 'postcss';
 import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 
@@ -9,6 +10,10 @@ const Details = () => {
     // console.log(seletedJob);
     const { salary, type, location, jobDescription, experience, contact, educationQualification, companyName, companyLogo, postName, jobName, jobResponsibilities, } = seletedJob[0];
 
+    const handleApply = (id)=>{
+        const applyJob = alljobs.filter(job=>job.id ===id)
+        
+    }
     return (
         <div>
             <p className='text-4xl font-semibold text-center'>Job Details</p>
@@ -46,7 +51,7 @@ const Details = () => {
                             <p> <span className='font-semibold'>Location :</span> {location}</p>
                         </div>
 
-                        <button className='btn btn-primary mt-3'>Apply Now</button>
+                        <button onClick={()=>handleApply(id)} className='btn btn-primary mt-3' >Apply Now</button>
 
                     </div>
 
