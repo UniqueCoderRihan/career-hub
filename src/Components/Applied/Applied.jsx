@@ -1,7 +1,6 @@
 import React from 'react';
 import { getShoppingCart } from '../../../fakedb/fakedb';
 import { useLoaderData } from 'react-router-dom';
-import AppliedJob from '../AppliedJobDetails/AppliedJob';
 import Footer from '../Footer/Footer';
 
 const Applied = () => {
