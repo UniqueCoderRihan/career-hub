@@ -13,6 +13,9 @@ const Onsite = () => {
         appliedData.push(appliedFind);
         // console.log(appliedFind);
     }
+    // const onsite = appliedData.find(o=>o.type =='onsite')
+    // const onsite = appliedData.find(data=>data.type ==='onsite');
+    
     return (
         <div>
             <h2 className='text-center font-semibold text-3xl my-3'>Here Is All Onsite Available Job </h2>
