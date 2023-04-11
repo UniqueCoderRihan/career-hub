@@ -38,8 +38,13 @@ const router = createBrowserRouter([
       {
         path: '/applied',
         element: <Applied></Applied>,
-        loader: ()=> fetch('feautures.json'),
+        loader: ()=> fetch('feautures.json')
 
+      },
+      {
+        path:'/onsite',
+        element:<Onsite></Onsite>,
+        loader: ()=> fetch('feautures.json')
       },
       {
         path: '/:id',
