@@ -19,12 +19,20 @@ const Onsite = () => {
     return (
         <div>
             <h2 className='text-center font-semibold text-3xl my-3'>Here Is All Onsite Available Job </h2>
-            {
+            {/* {
                 appliedData.map(data => <OnsiteContainer
                 key={data.id}
                 data={data}
                 ></OnsiteContainer>)
-            }
+            } */}
+            <div>
+                <OnsiteContainer
+                jobs={appliedData}
+                ></OnsiteContainer>
+            </div>
+            {/* {
+                appliedData.find(p=>p.type==='oOnsite')
+            } */}
         </div>
     );
 };
