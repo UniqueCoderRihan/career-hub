@@ -39,22 +39,6 @@ const router = createBrowserRouter([
         path: '/applied',
         element: <Applied></Applied>,
         loader: ()=> fetch('feautures.json'),
-        errorElement: <ErrorPage></ErrorPage>,
-        children:[
-          {
-            path: ':id',
-            element: <AppliedDetail></AppliedDetail>,
-            loader: ()=> fetch('feautures.json')
-          },
-          {
-            path:'onsite',
-            element:<Onsite></Onsite>
-          },
-          {
-            path:'*',
-            element: <ErrorPage></ErrorPage>
-          }
-        ]
       },
       {
         path: '/:id',

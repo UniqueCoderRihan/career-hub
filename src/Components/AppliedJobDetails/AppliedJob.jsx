@@ -26,7 +26,7 @@ const AppliedJob = ({ job }) => {
                         </div>
                     </div>
                     <div>
-                        <Link to={id}>
+                        <Link to={`/${id}`}>
                             <button className='btn btn-primary'> View Details </button>
                         </Link>
                     </div>
