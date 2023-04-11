@@ -1,6 +1,7 @@
 import { stringify } from 'postcss';
 import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addToDb } from '../../../fakedb/fakedb';
 
 const Details = () => {
     const { id } = useParams();
@@ -12,7 +13,7 @@ const Details = () => {
 
     const handleApply = (id)=>{
         const applyJob = alljobs.filter(job=>job.id ===id)
-        
+        addToDb(id);
     }
     return (
         <div>

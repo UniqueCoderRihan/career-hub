@@ -15,6 +15,7 @@ import Home from './Components/Home/Home';
 import Details from './Components/Details/Details';
 import Chat from './Components/Chat/Chat';
 import ErrorPage from './Components/Error/ErrorPage';
+import AppliedDetail from './Components/Applied/AppliedDetail';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,20 @@ const router = createBrowserRouter([
       },
       {
         path: '/applied',
-        element: <Applied></Applied>
+        element: <Applied></Applied>,
+        loader: ()=> fetch('feautures.json'),
+        errorElement: <ErrorPage></ErrorPage>,
+        children:[
+          {
+            path: ':id',
+            element: <AppliedDetail></AppliedDetail>,
+            loader: ()=> fetch('feautures.json')
+          },
+          {
+            path:'*',
+            element: <ErrorPage></ErrorPage>
+          }
+        ]
       },
       {
         path: '/:id',
