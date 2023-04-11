@@ -25,7 +25,7 @@ const Details = () => {
                     <p><span className='font-semibold'>Education Requerments: </span> <span>{educationQualification}.</span></p>
                     <p className='my-5'> <span className='font-semibold'>Experiance:</span> <span>{experience} on this filed.</span></p>
                 </div>
-                <div className='m-5'>
+                <div className='m-5 rounded-lg bg-base-300 p-5'>
                     <p className='font-semibold mb-3'>Job Details:</p>
                     <hr />
                     <div className='flex'>

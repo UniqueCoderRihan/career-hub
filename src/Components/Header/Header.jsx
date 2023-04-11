@@ -6,7 +6,7 @@ const Header = () => {
     return (
 
         <div className='mx-5'>
-            <div className='grid md:grid-cols-2'>
+            <div className='grid md:grid-cols-2 bg-base-200'>
                 <div className='w-50% my-auto'>
                     <div>
                         <h4 className='text-5xl font-semibold'>One Step </h4>
