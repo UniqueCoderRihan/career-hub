@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line } from 'recharts';
 const Chat = () => {
     const marks = [
@@ -12,17 +13,20 @@ const Chat = () => {
     ];
     return (
         <div>
-            <h3 className='text-center my-4 font-semibold'>My Assignment Marks </h3>
-           <AreaChart
-                width={1000}
-                height={300}
-                data={marks}
+            <div>
+                <h3 className='text-center my-4 font-semibold'>My Assignment Marks </h3>
+                <AreaChart
+                    width={1000}
+                    height={300}
+                    data={marks}
                 >
                     <Area dataKey="marks"></Area>
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
                 </AreaChart>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
