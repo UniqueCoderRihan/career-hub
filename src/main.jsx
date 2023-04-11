@@ -16,6 +16,7 @@ import Details from './Components/Details/Details';
 import Chat from './Components/Chat/Chat';
 import ErrorPage from './Components/Error/ErrorPage';
 import AppliedDetail from './Components/Applied/AppliedDetail';
+import Onsite from './Components/Onsite/Onsite';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
             path: ':id',
             element: <AppliedDetail></AppliedDetail>,
             loader: ()=> fetch('feautures.json')
+          },
+          {
+            path:'onsite',
+            element:<Onsite></Onsite>
           },
           {
             path:'*',
