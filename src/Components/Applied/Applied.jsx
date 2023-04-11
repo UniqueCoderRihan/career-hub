@@ -14,7 +14,7 @@ const Applied = () => {
         if (applyed) {
             applyedJob.push(applyed)
         }
-        
+
     }
     return (
         <div>
