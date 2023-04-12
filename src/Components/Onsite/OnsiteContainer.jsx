@@ -4,9 +4,9 @@ import OnsiteJob from './OnsiteJob';
 const OnsiteContainer = ({jobs}) => {
     console.log(jobs.length);
     let data =[];
-    const type = 'Onclick';
+    const type = 'Onsite';
     for(let i=0; i>jobs.length;i++){
-        let typeDepened = jobs.find(job=> job.type ===type)
+        let typeDepened = jobs.find(job=> job.type ==type)
         data.push(typeDepened);
         
     }

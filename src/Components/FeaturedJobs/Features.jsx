@@ -3,11 +3,15 @@ import Singlejob from '../Singlejob/Singlejob';
 
 const Features = () => {
     const [jobs, setjobs] = useState([]);
-    fetch('feautures.json')
+    const [limitedJob, setLimitedJob] = useState([]);
+    useEffect(()=> {
+        fetch('/feautures.json')
         .then(res => res.json())
-        .then(jobs => setjobs(jobs))
-
-    const Data = jobs.slice(0, 4)
+        .then(data => {
+            setjobs(data)
+            setLimitedJob(data.slice(0,4))
+        })
+    },[])
 
 
     return (
@@ -18,14 +22,14 @@ const Features = () => {
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-4' >
                 {
-                    Data.map(job => <Singlejob
+                    limitedJob.map(job => <Singlejob
                         key={job.id}
                         job={job}
                     ></Singlejob>)
                 }
             </div>
             <div className='text-center'>
-                <button className='btn btn-primary'>See All Jobs</button>
+                <button onClick={()=> setLimitedJob(jobs)} className='btn btn-primary'>See All Jobs</button>
             </div>
         </div>
     );
